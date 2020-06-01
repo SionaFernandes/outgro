@@ -1,0 +1,25 @@
+.section-6 {
+  .contact-image {
+    @include image-default($card4-url, right, contain, no-repeat);
+    background-size: 146px;
+    padding-right: 148px;
+
+    @media screen and (max-width: 420px) {
+      background-size: 110px;
+      background-repeat: no-repeat;
+      padding-right: 95px;
+      font-size: 2rem;
+    }
+  }
+
+  .outgro-button {
+    height: 116px;
+    width: 376px;
+    border: 0;
+
+    @include maxWidth(420px) {
+      height: 76px;
+      width: 274px;
+    }
+  }
+}

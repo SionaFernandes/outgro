@@ -1,0 +1,195 @@
+.director-section {
+  padding-top: 100px;
+
+  h2 {
+    font-size: 56px;
+    line-height: 70px;
+    position: relative;
+    margin-left: 25px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 10px;
+      left: -25px;
+      z-index: 2;
+      height: 37px;
+      width: 27px;
+      @include image-default(
+        "../../assets/images/card-images/svg/quote.svg",
+        center,
+        28px,
+        no-repeat
+      );
+
+      @include maxWidth(420px) {
+        top: 0px;
+        background-size: 23px;
+      }
+    }
+
+    span {
+      display: inline-block;
+      position: relative;
+
+      &::after {
+        @include image-default(
+          "../../assets/images/card-images/svg/quote.svg",
+          center,
+          28px,
+          no-repeat
+        );
+        content: "";
+        display: block;
+        position: absolute;
+        top: -15px;
+        right: -35px;
+        z-index: 2;
+        height: 37px;
+        width: 27px;
+        transform: rotate(180deg);
+        @include maxWidth(420px) {
+          background-size: 23px;
+        }
+      }
+    }
+
+    @include maxWidth(768px) {
+      font-size: 26px;
+      line-height: 34px;
+    }
+  }
+
+  h3 {
+    font-size: 36px;
+    line-height: 42px;
+    margin-top: 20px;
+
+    @include maxWidth(768px) {
+      font-size: 26px;
+      line-height: 34px;
+    }
+  }
+
+  .button-default {
+    border-radius: 20px;
+    padding: 28px 55px;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 22px;
+    line-height: 18px;
+    transition: all 0.3s ease-in-out;
+
+    @include maxWidth(768px) {
+      font-size: 14px;
+      line-height: 18px;
+      padding: 12px 24px;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: $green;
+    }
+  }
+
+  p {
+    color: $grey;
+  }
+}
+
+.director-desc-section {
+  position: absolute;
+  bottom: 0;
+  h4 {
+    margin-top: 15px;
+  }
+}
+
+.director-image {
+  @media screen and (max-width: 420px) {
+    width: 100%;
+  }
+}
+
+.spacer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  @media screen and (max-width: 420px) {
+    position: static;
+    margin-top: 97px;
+  }
+
+  .copy {
+    font-size: 16px;
+  }
+}
+
+.dir-img-container {
+  position: relative;
+}
+
+.quote-line {
+  display: inline-block;
+  position: absolute;
+  left: 110px;
+  top: 18px;
+  z-index: 2;
+  @include maxWidth(420px) {
+    left: 60px;
+    height: 80px;
+    top: 0;
+  }
+}
+
+.director-image {
+  transform: translate(28px, 10px);
+  @include maxWidth(420px) {
+    transform: none;
+  }
+}
+
+.social-icons {
+  margin-bottom: 0px;
+
+  li {
+    height: 53px;
+    width: 53px;
+    background-color: #fff;
+    display: inline-block;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+
+  .facebook {
+    @include image-default(
+      "../../assets/images/card-images/svg/fb-icon.svg",
+      center,
+      cover,
+      no-repeat
+    );
+  }
+
+  .Insta {
+    @include image-default(
+      "../../assets/images/card-images/svg/insta-icon.svg",
+      center,
+      cover,
+      no-repeat
+    );
+  }
+
+  .Link {
+    @include image-default(
+      "../../assets/images/card-images/svg/LinkedIn-icon.svg",
+      center,
+      cover,
+      no-repeat
+    );
+  }
+}

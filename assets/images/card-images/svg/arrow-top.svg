@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14.667" height="17.658" viewBox="0 0 14.667 17.658">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #959595;
+      }
+    </style>
+  </defs>
+  <g id="left-arrow" transform="translate(56.341) rotate(90)">
+    <g id="Group_1499" data-name="Group 1499" transform="translate(0 41.674)">
+      <path id="Path_7771" data-name="Path 7771" class="cls-1" d="M16.665,47.623l.028.006H4.877l3.714-3.723a.976.976,0,0,0,0-1.371l-.578-.578a.967.967,0,0,0-1.365,0L.281,48.322a.973.973,0,0,0,0,1.369l6.367,6.367a.968.968,0,0,0,1.365,0l.578-.578a.956.956,0,0,0,.282-.682.928.928,0,0,0-.282-.669L4.835,50.386H16.678a1,1,0,0,0,.979-.991v-.818A.981.981,0,0,0,16.665,47.623Z" transform="translate(0 -41.674)"/>
+    </g>
+  </g>
+</svg>

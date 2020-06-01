@@ -1,0 +1,19 @@
+@mixin image-default($url,$position,$size,$repeat) {
+    background-image: url($url) ;
+    background-position: $position;
+    background-size: $size;
+    background-repeat: $repeat;
+}
+
+
+// For Media Queries
+
+@mixin maxWidth($maxWidth) {
+ 
+    @media screen and (max-width: $maxWidth){
+        @content;
+    }
+
+}
+
+
