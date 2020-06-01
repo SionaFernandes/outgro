@@ -1,11 +1,15 @@
-.section-4{
-    .image {
-        @include image-default($image-4points, center, contain, no-repeat);
-        height: 100%;
-        width: 100%;
-        @include maxWidth(767px){
-            height: 188px;
-            margin-bottom: 50px;
-        }
+.section-4 {
+  @include maxWidth(420px) {
+    padding-bottom: 80px;
+  }
+  .image {
+    @include image-default($image-4points, center, contain, no-repeat);
+    height: 100%;
+    width: 100%;
+    @include maxWidth(767px) {
+      background-position: left;
+      height: 145px;
+      margin-bottom: 26px;
     }
+  }
 }

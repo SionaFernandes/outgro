@@ -1,5 +1,8 @@
 .director-section {
   padding-top: 100px;
+  @include maxWidth(420px) {
+    padding-top: 84px;
+  }
 
   h2 {
     font-size: 56px;
@@ -69,6 +72,9 @@
     @include maxWidth(768px) {
       font-size: 26px;
       line-height: 34px;
+    }
+    @include maxWidth(420px) {
+      padding-top: 160px;
     }
   }
 
@@ -163,6 +169,10 @@
     &:hover {
       cursor: pointer;
       opacity: 0.8;
+    }
+    @include maxWidth(420px) {
+      height: 37px;
+      width: 37px;
     }
   }
 

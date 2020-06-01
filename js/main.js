@@ -16,7 +16,7 @@ AOS.init({
 
 var logoSlider = new Swiper('.logo-slider-container', {
     loop: true,
-    slidesPerView: 1.5,
+    slidesPerView: 1.2,
     spaceBetween: 30,
     breakpoints: {
         // when window width is >= 480px

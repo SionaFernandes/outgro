@@ -1,15 +1,14 @@
 .card-white {
-    background-color: $card-white-bg;
-    color: $black;
-    min-height: 70vh;
+  background-color: $card-white-bg;
+  color: $black;
+  min-height: 70vh;
 
-    @include maxWidth(1280px){
-        padding: 50px 0px;
-    }
+  @include maxWidth(1280px) {
+    padding: 60px 0px;
+  }
 }
 
 .card-black {
-    background-color: $card-black-bg;
-    color: $white;
+  background-color: $card-black-bg;
+  color: $white;
 }
-

@@ -1,4 +1,8 @@
 .section-6 {
+  @include maxWidth(420px) {
+    padding-top: 90px;
+    padding-bottom: 93px;
+  }
   .contact-image {
     @include image-default($card4-url, right, contain, no-repeat);
     background-size: 146px;
@@ -20,6 +24,12 @@
     @include maxWidth(420px) {
       height: 76px;
       width: 274px;
+      margin-top: 15px;
+    }
+  }
+  .contact-links {
+    @include maxWidth(420px) {
+      margin-top: 83px !important;
     }
   }
 }

@@ -7,7 +7,6 @@
   @include maxWidth(1280px) {
     height: 260px;
     width: 255px;
-
   }
 
   @include maxWidth(768px) {
@@ -33,6 +32,7 @@
 
   @include maxWidth(420px) {
     padding-top: 11vh;
+    padding-bottom: 6.8vh;
   }
 
   .title {
@@ -56,7 +56,6 @@
     //   font-size: 60px;
     //   line-height: 60px;
     // }
-
   }
 
   p {
@@ -89,6 +88,6 @@
   margin-top: 60px;
 
   @include maxWidth(1280px) {
-    margin-top: 35px;
+    margin-top: 38px;
   }
 }

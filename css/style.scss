@@ -1,55 +1,70 @@
 //sass --watch style.scss:style.min.css --style compressed
-@import 'theme/all.scss';
-@import 'componets/all.scss';
-
+@import "theme/all.scss";
+@import "componets/all.scss";
 
 .section-2 {
-    h2 {
-        margin-bottom: 25px;
+  h2 {
+    margin-bottom: 25px;
 
-        @include maxWidth(420px) {
-            padding-right: 75px;
-        }
+    @include maxWidth(420px) {
+      padding-right: 75px;
     }
+  }
 
-    p {
-        font-weight: 500;
-    }
+  p {
+    font-weight: 500;
+  }
 }
 
 .section-4 {
-    h2 {
-        margin-bottom: 30px;
+  h2 {
+    margin-bottom: 30px;
 
-        @include maxWidth(420px) {
-            padding-right: 95px;
-        }
-
+    @include maxWidth(420px) {
+      padding-right: 95px;
+      font-size: 24px;
+      margin-bottom: 25px;
     }
+  }
 
-    p {
-        font-weight: 500;
-        margin-bottom: 0px;
-        margin-top: 0px;
-        line-height: 60px;
+  p {
+    font-weight: 500;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    line-height: 60px;
+    @include maxWidth(420px) {
+      line-height: 44px;
     }
+  }
 }
-.section-5{
-    h2{
-        @include maxWidth(420px) {
-            padding-right: 30px;
-        }
+.section-5 {
+  .section-5-list {
+    margin: 40px 0 45px;
+  }
+  @include maxWidth(420px) {
+    padding-top: 117px;
+    padding-bottom: 110px;
+  }
+
+  @include maxWidth(420px) {
+    h2 {
+      padding-right: 30px;
     }
+
+    .section-5-list {
+      margin: 14px 0 30px;
+    }
+  }
 }
 
 section {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
-.overflow-y-hidden{
-    overflow-y: hidden;
+.overflow-y-hidden {
+  overflow-y: hidden;
 }
 
-.overflow-x-hidden{
-    overflow-x: hidden;
+.overflow-x-hidden {
+  overflow-x: hidden;
 }

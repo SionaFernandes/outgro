@@ -10,6 +10,10 @@
   @include maxWidth(768px) {
     height: 450px;
   }
+  @include maxWidth(420px) {
+    height: 384px;
+    margin-bottom: 0;
+  }
 
   .swiper-slide {
     background-color: transparent;
@@ -80,10 +84,11 @@
     position: relative;
     @include maxWidth(420px) {
       padding-right: 58px;
-      margin-bottom: 44px;
+      margin-bottom: 40px;
     }
   }
   @include maxWidth(1280px) {
-    padding-top: 50px;
+    padding-top: 73px;
+    padding-bottom: 87px;
   }
 }
