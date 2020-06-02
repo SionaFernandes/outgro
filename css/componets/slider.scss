@@ -64,6 +64,9 @@
       cursor: pointer;
       opacity: 0.8;
     }
+    &.pause {
+      background-image: url("../../assets/images/card-images/svg/slider-pause-button.svg");
+    }
   }
 }
 

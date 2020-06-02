@@ -1,113 +1,100 @@
-const slideNextArrow = document.getElementById('next-slide-arrow');
+const slideNextArrow = document.getElementById("next-slide-arrow");
 
 // const body = document.getElementById('body');
-const logo = document.getElementById('logo');
+const logo = document.getElementById("logo");
 
 // ==============  AOS =======================
 AOS.init({
-    duration: 600,
-    once: true,
-    initClassName: 'aos-init'
+  duration: 600,
+  once: true,
+  initClassName: "aos-init",
 });
-
-
 
 // ============== logo-slider ============================================
 
-var logoSlider = new Swiper('.logo-slider-container', {
-    loop: true,
-    slidesPerView: 1.2,
-    spaceBetween: 30,
-    breakpoints: {
-        // when window width is >= 480px
-        480: {
-            slidesPerView: 3,
-            spaceBetween: 30
-        },
-        // when window width is >= 640px
-        640: {
-            slidesPerView: 2.2,
-            spaceBetween: 30
-        },
-        998: {
-            slidesPerView: 3.2,
-            spaceBetween: 40
-        }
-    }
-})
+var logoSlider = new Swiper(".logo-slider-container", {
+  loop: true,
+  slidesPerView: 1.2,
+  spaceBetween: 30,
+  breakpoints: {
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 2.2,
+      spaceBetween: 30,
+    },
+    998: {
+      slidesPerView: 3.2,
+      spaceBetween: 40,
+    },
+  },
+});
 
-slideNextArrow.addEventListener('click', () => {
-    logoSlider.slideNext();
-})
-
-
+slideNextArrow.addEventListener("click", () => {
+  logoSlider.slideNext();
+});
 
 // ============= Video Slider Section. Custom play button. ================
-let play = document.getElementsByClassName('play');
+let play = document.getElementsByClassName("play");
+console.log(play);
 
 for (var i = 0; i < play.length; i++) {
+  play[i].addEventListener("click", function () {
+    let myVideo = this.previousElementSibling;
 
-    play[i].addEventListener('click', function () {
-        myVideo = this.previousElementSibling;
-        if (myVideo.paused) {
-            myVideo.play();
-        }
-        else {
-            myVideo.pause();
-        }
-    });
-
+    if (myVideo.paused) {
+      myVideo.play();
+      this.classList.add("pause");
+    } else {
+      myVideo.pause();
+      this.classList.remove("pause");
+    }
+  });
 }
 
-
 // ============= Smooth Scroll =============================================
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
     });
+  });
 });
-
 
 // =========== scroll to top arrow ============================================
-const arrowTop = document.getElementById('arrow-up');
+const arrowTop = document.getElementById("arrow-up");
 
-window.addEventListener('scroll', function () {
-    if (window.scrollY >= 915) {
-        arrowTop.classList.remove('animate-opacity');
-    } else {
-        arrowTop.classList.add('animate-opacity');
-    }
+window.addEventListener("scroll", function () {
+  if (window.scrollY >= 915) {
+    arrowTop.classList.remove("animate-opacity");
+  } else {
+    arrowTop.classList.add("animate-opacity");
+  }
 });
-
-
 
 // ============== If clients asks for scroll up down logo toggle ==============
 // Initial state
 var scrollPos = 0;
 // adding scroll event
-window.addEventListener('scroll', function () {
-
-    let scrollPosition = window.scrollY;
-    if (scrollPosition >= 240) {
-        if ((document.body.getBoundingClientRect()).top > scrollPos) {
-
-            // togglOpacity();
-            logo.classList.remove('animate-opacity');
-
-        }
-        else {
-            logo.classList.add('animate-opacity');
-        }
+window.addEventListener("scroll", function () {
+  let scrollPosition = window.scrollY;
+  if (scrollPosition >= 240) {
+    if (document.body.getBoundingClientRect().top > scrollPos) {
+      // togglOpacity();
+      logo.classList.remove("animate-opacity");
+    } else {
+      logo.classList.add("animate-opacity");
     }
-    // saves the new position for iteration.
-    scrollPos = (document.body.getBoundingClientRect()).top;
+  }
+  // saves the new position for iteration.
+  scrollPos = document.body.getBoundingClientRect().top;
 });
-
-
 
 // ===================== AOS EVENTS ===================================
 
