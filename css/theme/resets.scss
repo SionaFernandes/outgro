@@ -1,123 +1,123 @@
 body {
-    background-color: $black;
-    color: $white;
-    font-family: $main-font;
+  background-color: $black;
+  color: $white;
+  font-family: $main-font;
 }
 
 button,
 .btn {
-    font-family: $main-font;
+  font-family: $main-font;
 }
 
 ul {
-    padding: 0;
-    padding-left: inherit;
+  padding: 0;
+  padding-left: inherit;
 
-    li {
-        color: $grey;
-        margin: 0px 10px;
-        font-size: 22px;
-        line-height: 44px;
-        font-weight: 500;
+  li {
+    color: $grey;
+    margin: 0px 10px;
+    font-size: 22px;
+    line-height: 44px;
+    font-weight: 500;
 
-        @include maxWidth(768px) {
-            font-size: 16px;
-            line-height: 28px;
-        }
+    @include maxWidth(768px) {
+      font-size: 16px;
+      line-height: 28px;
     }
-
+  }
 }
 
 strong {
-    padding-right: 20px;
-    font-size: 22px;
-    line-height: 60px;
-    font-weight: 800;
+  padding-right: 20px;
+  font-size: 22px;
+  line-height: 60px;
+  font-weight: 800;
 
-    @include maxWidth(768px) {
-        font-size: 16px;
-        padding-right: 15px;
-        line-height: 44px;
-    }
+  @include maxWidth(768px) {
+    font-size: 16px;
+    padding-right: 15px;
+    line-height: 44px;
+  }
 }
 
 section {
-    min-height: 100vh;
+  min-height: 100vh;
 
-    @media screen and (max-width:1280px) {
-        min-height: 82vh;
-    }
+  @media screen and (max-width: 1280px) {
+    min-height: 82vh;
+  }
 
-    @media screen and (max-width:420px) {
-        padding: 15vh 0px;
-    }
+  @media screen and (max-width: 420px) {
+    padding: 15vh 0px;
+  }
 }
 
 h2 {
-    font-size: 60px;
-    font-weight: bold;
-    line-height: 70px;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 70px;
 
-    @include maxWidth(1280px) {
-        font-size: 46px;
-        line-height: 52px;
-    }
+  @include maxWidth(1280px) {
+    font-size: 46px;
+    line-height: 52px;
+  }
 
-    @include maxWidth(768px) {
-        font-size: 26px;
-        line-height: 34px;
-    }
+  @include maxWidth(768px) {
+    font-size: 26px;
+    line-height: 34px;
+  }
 }
 
 h3 {
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 70px;
-    color: $grey;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 70px;
+  color: $grey;
 
-    @include maxWidth(768px) {
-        font-size: 26px;
-        line-height: 34px;
-    }
+  @include maxWidth(768px) {
+    font-size: 26px;
+    line-height: 34px;
+  }
 }
 
 h4 {
-    font-size: 40px;
-    font-weight: bold;
-    line-height: 70px;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 70px;
 
-    @include maxWidth(768px) {
-        font-size: 26px;
-        line-height: 34px;
-    }
-
+  @include maxWidth(768px) {
+    font-size: 26px;
+    line-height: 34px;
+  }
 }
 
-
 p {
+  font-size: 22px;
+  line-height: 40px;
+
+  @include maxWidth(1280px) {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  @include maxWidth(768px) {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  a {
     font-size: 22px;
-    line-height: 40px;
-
-    @include maxWidth(1280px) {
-        font-size: 20px;
-        line-height: 32px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: $black;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: $green;
     }
 
-    @include maxWidth(768px) {
-        font-size: 16px;
-        line-height: 28px;
+    @include maxWidth(420px) {
+      font-size: 16px;
+      line-height: 28px;
     }
-
-    a {
-        font-size: 22px;
-        font-weight: bold;
-        text-decoration: underline;
-        color: #000000;
-
-        @include maxWidth(420px) {
-            font-size: 16px;
-            line-height: 28px;
-        }
-    }
-
+  }
 }
