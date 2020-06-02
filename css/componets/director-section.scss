@@ -131,6 +131,11 @@
   .copy {
     font-size: 16px;
   }
+  img {
+    @include maxWidth(768px) {
+      height: 16px;
+    }
+  }
 }
 
 .dir-img-container {
@@ -170,6 +175,10 @@
     &:hover {
       cursor: pointer;
       opacity: 0.8;
+    }
+    @include maxWidth(768px) {
+      height: 45px;
+      width: 45px;
     }
     @include maxWidth(420px) {
       height: 37px;

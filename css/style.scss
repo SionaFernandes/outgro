@@ -4,6 +4,8 @@
 @import "componets/all.scss";
 
 .section-2 {
+  padding: 125px 0;
+
   h2 {
     margin-bottom: 25px;
 
@@ -35,6 +37,9 @@
     line-height: 60px;
     @include maxWidth(420px) {
       line-height: 44px;
+    }
+    @include maxWidth(320px) {
+      font-size: 15px;
     }
   }
 }

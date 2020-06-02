@@ -3,8 +3,13 @@
   color: $black;
   min-height: 70vh;
 
-  @include maxWidth(1280px) {
-    padding: 60px 0px;
+  
+  @include maxWidth(1024px) {
+    min-height: 50vh;
+  }
+
+  @include maxWidth(768px) {
+    min-height: 40vh;
   }
 }
 

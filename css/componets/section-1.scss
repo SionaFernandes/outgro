@@ -12,22 +12,23 @@
   @include maxWidth(768px) {
     height: 300px;
     width: 255px;
-    transform: translate(0px, 75px);
+    transform: translate(0px, 0px);
   }
 
   @media screen and (max-width: 420px) {
     height: 300px;
     width: 290px;
-    transform: translate(0px, 0px);
   }
 }
 
 .section-1 {
-  padding-top: 20vh;
   min-height: 87vh;
 
   @include maxWidth(1280px) {
     padding-top: 55px;
+  }
+  @include maxWidth(1024px) {
+    min-height: 50vh;
   }
 
   @include maxWidth(420px) {
