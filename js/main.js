@@ -40,7 +40,6 @@ slideNextArrow.addEventListener("click", () => {
 
 // ============= Video Slider Section. Custom play button. ================
 let play = document.getElementsByClassName("play");
-console.log(play);
 
 for (var i = 0; i < play.length; i++) {
   play[i].addEventListener("click", function () {
