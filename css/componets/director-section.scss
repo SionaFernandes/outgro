@@ -95,7 +95,6 @@
 
     &:hover {
       text-decoration: none;
-      color: $green;
     }
   }
 
@@ -187,29 +186,56 @@
   }
 
   .facebook {
+    transition: all 0.3s ease-in-out;
     @include image-default(
       "../../assets/images/card-images/svg/fb-icon.svg",
       center,
       cover,
       no-repeat
     );
+    &:hover {
+      @include image-default(
+        "../../assets/images/card-images/svg/fb-hover.svg",
+        center,
+        cover,
+        no-repeat
+      );
+    }
   }
 
   .Insta {
+    transition: all 0.3s ease-in-out;
     @include image-default(
       "../../assets/images/card-images/svg/insta-icon.svg",
       center,
       cover,
       no-repeat
     );
+    &:hover {
+      @include image-default(
+        "../../assets/images/card-images/svg/insta-hover.svg",
+        center,
+        cover,
+        no-repeat
+      );
+    }
   }
 
   .Link {
+    transition: all 0.3s ease-in-out;
     @include image-default(
       "../../assets/images/card-images/svg/LinkedIn-icon.svg",
       center,
       cover,
       no-repeat
     );
+    &:hover {
+      @include image-default(
+        "../../assets/images/card-images/svg/LinkedIn-hover.svg",
+        center,
+        cover,
+        no-repeat
+      );
+    }
   }
 }
