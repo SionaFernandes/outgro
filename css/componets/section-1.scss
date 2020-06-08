@@ -16,7 +16,7 @@
   }
 
   @media screen and (max-width: 420px) {
-    height: 300px;
+    height: 200px;
     width: 290px;
   }
 }
@@ -32,7 +32,7 @@
   }
 
   @include maxWidth(420px) {
-    padding-top: 11vh;
+    padding-top: 5vh;
     padding-bottom: 6.8vh;
   }
 

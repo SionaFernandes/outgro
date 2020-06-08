@@ -16,10 +16,10 @@
     top: 30px;
   }
   @include maxWidth(420px) {
-    height: 72px;
-    width: 68px;
+    height: 55px;
+    width: 55px;
     left: 25px;
-    top: 22px;
+    top: 28px;
   }
 }
 
@@ -43,8 +43,7 @@ header {
   }
 }
 
-
-.animate-opacity{
+.animate-opacity {
   transition: opacity 0.3s ease-out;
   opacity: 0;
 }

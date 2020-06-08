@@ -67,33 +67,33 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 // =========== scroll to top arrow ============================================
-const arrowTop = document.getElementById("arrow-up");
+// const arrowTop = document.getElementById("arrow-up");
 
-window.addEventListener("scroll", function () {
-  if (window.scrollY >= 915) {
-    arrowTop.classList.remove("animate-opacity");
-  } else {
-    arrowTop.classList.add("animate-opacity");
-  }
-});
+// window.addEventListener("scroll", function () {
+//   if (window.scrollY >= 915) {
+//     arrowTop.classList.remove("animate-opacity");
+//   } else {
+//     arrowTop.classList.add("animate-opacity");
+//   }
+// });
 
 // ============== If clients asks for scroll up down logo toggle ==============
 // Initial state
-var scrollPos = 0;
+// var scrollPos = 0;
 // adding scroll event
-window.addEventListener("scroll", function () {
-  let scrollPosition = window.scrollY;
-  if (scrollPosition >= 240) {
-    if (document.body.getBoundingClientRect().top > scrollPos) {
-      // togglOpacity();
-      logo.classList.remove("animate-opacity");
-    } else {
-      logo.classList.add("animate-opacity");
-    }
-  }
-  // saves the new position for iteration.
-  scrollPos = document.body.getBoundingClientRect().top;
-});
+// window.addEventListener("scroll", function () {
+//   let scrollPosition = window.scrollY;
+//   if (scrollPosition >= 240) {
+//     if (document.body.getBoundingClientRect().top > scrollPos) {
+//       // togglOpacity();
+//       logo.classList.remove("animate-opacity");
+//     } else {
+//       logo.classList.add("animate-opacity");
+//     }
+//   }
+// saves the new position for iteration.
+//   scrollPos = document.body.getBoundingClientRect().top;
+// });
 
 // ===================== AOS EVENTS ===================================
 

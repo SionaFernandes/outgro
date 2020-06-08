@@ -1,6 +1,7 @@
 .logo-slider-container {
   height: 650px;
   margin-top: 50px;
+  margin-left: 6%;
 
   @include maxWidth(1280px) {
     margin-bottom: 50px;
@@ -83,15 +84,12 @@
 }
 
 .section-3 {
+  padding: 125px 0;
   h3 {
     position: relative;
     @include maxWidth(420px) {
       padding-right: 58px;
       margin-bottom: 40px;
     }
-  }
-  @include maxWidth(1440px) {
-    padding-top: 73px;
-    padding-bottom: 87px;
   }
 }

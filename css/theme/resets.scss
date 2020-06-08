@@ -124,3 +124,9 @@ p {
     }
   }
 }
+
+.container {
+  @include maxWidth(768px) {
+    padding: 0 30px;
+  }
+}

@@ -47,7 +47,7 @@
   }
 
   @include maxWidth(768px) {
-    height: 312px;
+    height: 200px;
   }
 }
 
@@ -72,6 +72,7 @@
     background-position: left;
     height: 148px;
     position: static;
+    margin-bottom: 30px;
   }
 }
 
@@ -123,12 +124,14 @@
   width: 14px;
   float: right;
 }
-
+footer {
+  position: relative;
+}
 #arrow-up {
   @include image-default($arrow-up, left, contain, no-repeat);
   height: 17px;
   width: 14px;
-  position: fixed;
+  position: absolute;
   z-index: 9;
   bottom: 70px;
   right: 48px;

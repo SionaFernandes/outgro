@@ -1,7 +1,5 @@
 .section-4 {
-  @include maxWidth(420px) {
-    padding-bottom: 80px;
-  }
+  
   .image {
     @include image-default($image-4points, center, contain, no-repeat);
     height: 100%;

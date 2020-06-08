@@ -2,6 +2,8 @@
   padding-top: 100px;
   @include maxWidth(420px) {
     padding-top: 84px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   h2 {
