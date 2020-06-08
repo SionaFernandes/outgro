@@ -4,17 +4,19 @@ const slideNextArrow = document.getElementById("next-slide-arrow");
 const logo = document.getElementById("logo");
 
 // ==============  AOS =======================
+
 AOS.init({
   duration: 600,
   once: true,
   initClassName: "aos-init",
 });
+window.addEventListener("load", AOS.refresh);
 
 // ============== logo-slider ============================================
 
 var logoSlider = new Swiper(".logo-slider-container", {
   loop: true,
-  slidesPerView: 1.2,
+  slidesPerView: 1,
   spaceBetween: 30,
   breakpoints: {
     // when window width is >= 480px
