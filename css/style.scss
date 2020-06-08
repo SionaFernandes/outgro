@@ -21,8 +21,7 @@
   h2 {
     margin-bottom: 30px;
 
-    @include maxWidth(420px) {
-      padding-right: 95px;
+    @include maxWidth(420px) {     
       font-size: 24px;
       margin-bottom: 25px;
     }

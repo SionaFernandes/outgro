@@ -21,7 +21,7 @@
     position: relative;
     border-radius: 8px;
     color: #000000;
-    @include image-default($slider-img, center, cover, no-repeat);
+    // @include image-default($slider-img, center, cover, no-repeat);
   }
 
   .video-container {
