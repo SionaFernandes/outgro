@@ -47,10 +47,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     @include maxWidth(768px) {
-      min-width: none;
-      min-height: none;
       height: 100%;
-      left: 40%;
     }
   }
 
@@ -74,6 +71,15 @@
     }
     &.pause {
       background-image: url("../../assets/images/card-images/svg/slider-pause-button.svg");
+    }
+    @include maxWidth(769px) {
+      left: 35px;
+    }
+    @include maxWidth(420px) {
+      left: 65px;
+    }
+    @include maxWidth(320px) {
+      left: 30px;
     }
   }
 }
