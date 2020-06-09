@@ -6,9 +6,15 @@ const logo = document.getElementById("logo");
 // ==============  AOS =======================
 
 AOS.init({
+  startEvent: "load",
   duration: 600,
   once: true,
   initClassName: "aos-init",
+  disable: function () {
+    // This weird line should return true for safari <= 5 and false for anything else
+    // Based on http://browserhacks.com/
+    return /a/.__proto__ == "//";
+  },
 });
 window.addEventListener("load", AOS.refresh);
 

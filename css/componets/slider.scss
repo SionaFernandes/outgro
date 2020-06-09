@@ -7,9 +7,9 @@
     margin-top: 20px;
   }
 
-  // @include maxWidth(768px) {
-  //   height: 450px;
-  // }
+  @include maxWidth(768px) {
+    height: 450px;
+  }
   // @include maxWidth(420px) {
   //   height: 384px;
   //   margin-bottom: 0;
@@ -46,6 +46,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    @include maxWidth(768px) {
+      min-width: none;
+      min-height: none;
+      height: 100%;
+      left: 40%;
+    }
   }
 
   .play {
