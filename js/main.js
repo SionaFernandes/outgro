@@ -22,20 +22,11 @@ window.addEventListener("load", AOS.refresh);
 
 var logoSlider = new Swiper(".logo-slider-container", {
   loop: true,
-  slidesPerView: 1,
+  slidesPerView: 2,
   spaceBetween: 30,
   breakpoints: {
     // when window width is >= 480px
-    480: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
-    // when window width is >= 640px
-    640: {
-      slidesPerView: 2.2,
-      spaceBetween: 30,
-    },
-    998: {
+    768: {
       slidesPerView: 3,
       spaceBetween: 30,
     },
