@@ -30,6 +30,10 @@ var logoSlider = new Swiper(".logo-slider-container", {
       spaceBetween: 30,
     },
     998: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1025: {
       slidesPerView: 3.2,
       spaceBetween: 40,
     },

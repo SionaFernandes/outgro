@@ -1,20 +1,19 @@
 .logo-slider-container {
   height: 650px;
   margin-top: 50px;
-  margin-left: 6%;
 
   @include maxWidth(1280px) {
     margin-bottom: 50px;
     margin-top: 20px;
   }
 
-  @include maxWidth(768px) {
-    height: 450px;
-  }
-  @include maxWidth(420px) {
-    height: 384px;
-    margin-bottom: 0;
-  }
+  // @include maxWidth(768px) {
+  //   height: 450px;
+  // }
+  // @include maxWidth(420px) {
+  //   height: 384px;
+  //   margin-bottom: 0;
+  // }
 
   .swiper-slide {
     background-color: transparent;
