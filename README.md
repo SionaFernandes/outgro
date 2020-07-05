@@ -1,7 +1,7 @@
 # outgro
 Website done as working as a freelancer
 
-#Project
+# Project
 - HTML
 - SCSS
 - Javascript
