@@ -1,62 +1,62 @@
-.logo-slider-container {
-  margin-top: 50px;
+// .logo-slider-container {
+//   margin-top: 50px;
 
-  @include maxWidth(1280px) {
-    margin-bottom: 50px;
-    margin-top: 20px;
-  }
+//   @include maxWidth(1280px) {
+//     margin-bottom: 50px;
+//     margin-top: 20px;
+//   }
 
-  @include maxWidth(420px) {
-    margin-bottom: 0;
-  }
+//   @include maxWidth(420px) {
+//     margin-bottom: 0;
+//   }
 
-  .swiper-slide {
-    background-color: transparent;
-    position: relative;
-    border-radius: 10px;
-    color: #000000;
-  }
+//   .swiper-slide {
+//     background-color: transparent;
+//     position: relative;
+//     border-radius: 10px;
+//     color: #000000;
+//   }
 
-  .video {
-    width: 100%;
-    border-radius: 10px;
-  }
+//   .video {
+//     width: 100%;
+//     border-radius: 10px;
+//   }
 
-  .play {
-    position: absolute;
-    bottom: 20px;
-    left: 10px;
-    background-image: url("../../assets/images/card-images/svg/slider-play-button.svg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 40px;
-    width: 40px;
-    &:hover,
-    &:active {
-      cursor: pointer;
-    }
-    &:active {
-      cursor: pointer;
-      opacity: 0.8;
-    }
-    &.pause {
-      background-image: url("../../assets/images/card-images/svg/slider-pause-button.svg");
-    }
-  }
-}
+//   .play {
+//     position: absolute;
+//     bottom: 20px;
+//     left: 10px;
+//     background-image: url("../../assets/images/card-images/svg/slider-play-button.svg");
+//     background-size: contain;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     height: 40px;
+//     width: 40px;
+//     &:hover,
+//     &:active {
+//       cursor: pointer;
+//     }
+//     &:active {
+//       cursor: pointer;
+//       opacity: 0.8;
+//     }
+//     &.pause {
+//       background-image: url("../../assets/images/card-images/svg/slider-pause-button.svg");
+//     }
+//   }
+// }
 
-#next-slide-arrow {
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  &:hover {
-    cursor: pointer;
-    opacity: 0.8;
-  }
-}
+// #next-slide-arrow {
+//   position: absolute;
+//   right: 0;
+//   top: 0;
+//   bottom: 0;
+//   margin: auto;
+//   &:hover {
+//     cursor: pointer;
+//     opacity: 0.8;
+//   }
+// }
 
 .section-3 {
   padding: 125px 0;
@@ -66,5 +66,12 @@
       padding-right: 58px;
       margin-bottom: 40px;
     }
+  }
+  .logo-arrow {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
   }
 }

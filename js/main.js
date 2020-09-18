@@ -20,43 +20,43 @@ window.addEventListener("load", AOS.refresh);
 
 // ============== logo-slider ============================================
 
-var logoSlider = new Swiper(".logo-slider-container", {
-  loop: true,
-  slidesPerView: 2,
-  spaceBetween: 30,
-  breakpoints: {
-    // when window width is >= 480px
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
-    1025: {
-      slidesPerView: 3.2,
-      spaceBetween: 40,
-    },
-  },
-});
+// var logoSlider = new Swiper(".logo-slider-container", {
+//   loop: true,
+//   slidesPerView: 2,
+//   spaceBetween: 30,
+//   breakpoints: {
+//     // when window width is >= 480px
+//     768: {
+//       slidesPerView: 3,
+//       spaceBetween: 30,
+//     },
+//     1025: {
+//       slidesPerView: 3.2,
+//       spaceBetween: 40,
+//     },
+//   },
+// });
 
-slideNextArrow.addEventListener("click", () => {
-  logoSlider.slideNext();
-});
+// slideNextArrow.addEventListener("click", () => {
+//   logoSlider.slideNext();
+// });
 
 // ============= Video Slider Section. Custom play button. ================
-let play = document.getElementsByClassName("play");
+// let play = document.getElementsByClassName("play");
 
-for (var i = 0; i < play.length; i++) {
-  play[i].addEventListener("click", function () {
-    let myVideo = this.previousElementSibling;
+// for (var i = 0; i < play.length; i++) {
+//   play[i].addEventListener("click", function () {
+//     let myVideo = this.previousElementSibling;
 
-    if (myVideo.paused) {
-      myVideo.play();
-      this.classList.add("pause");
-    } else {
-      myVideo.pause();
-      this.classList.remove("pause");
-    }
-  });
-}
+//     if (myVideo.paused) {
+//       myVideo.play();
+//       this.classList.add("pause");
+//     } else {
+//       myVideo.pause();
+//       this.classList.remove("pause");
+//     }
+//   });
+// }
 
 // ============= Smooth Scroll =============================================
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
